@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Churrasquinho-Case para Snake_Case</h1>
+
+    <script>
+      function churrasquinhoParaSnake(churrasquinho) {
+        if (!churrasquinho) return "";
+        return churrasquinho.replaceAll("-", "_");
+      }
+
+      let palavraChurrasquinho = prompt("Digite uma palavra em churrasquinho-case:",);
+
+    let palavraSnake = churrasquinhoParaSnake(palavraChurrasquinho);
+    alert("A palavra em snake_case é: " + palavraSnake);
+    </script>
+  </body>
+</html>
